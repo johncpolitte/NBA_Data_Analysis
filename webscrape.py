@@ -24,6 +24,12 @@ def url_gen(url):
 
 season_urls = url_gen(url)
 
+
 def scrape(season_urls):
     for i in season_urls:
-        
+        webpage = requests.get(season_urls[i])
+        with open('scrape_records.log', 'a+') as log:
+            log.write(time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()))
+            log.write('Webpage: {},'.format(webpage))
+        soup = BeautifulSoup(webpage.text, 'lxml')
+        mongo_connect.insert_one(soup)
