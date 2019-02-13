@@ -26,15 +26,16 @@ season_urls = url_gen(url)
 
 
 def scrape(season_urls):
-    fields = {}
+    
     for i in season_urls:
+        i = {}
         webpage = requests.get(season_urls[i])
-        fields['misc_tables'] = webpage.find_all('div', id="all_misc_stats")[0]
-        fields['team_stats_table'] = webpage.find_all('div', id='all_team-stats-base')[0]
-        fields['shooting_table'] = webpage.find_all('div', id='all_team_shooting')[0]
+        i['misc_tables'] = str(webpage.find_all('div', id="all_misc_stats")[0])
+        i['team_stats_table'] = str(webpage.find_all('div', id='all_team-stats-base')[0])
+        i['shooting_table'] = str(webpage.find_all('div', id='all_team_shooting')[0])
         with open('scrape_records.log', 'a+') as log:
             log.write(time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()))
             log.write('Webpage: {},'.format(webpage))
         soup = BeautifulSoup(webpage.text, 'lxml')
-        mongo_connect.insert_one(fields)
+        mongo_connect.insert_one(i)
         time.sleep(60)
