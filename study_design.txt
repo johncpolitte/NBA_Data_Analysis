@@ -1,0 +1,28 @@
+Study design ideas:
+
+
+T-test
+Is there a statistical difference in:
+% of field goals that are 3 point shots in 2001 compared to 2018
+Offensive Rating in 2001 compared to 2018
+Defensive Rating in 2001 compared to 2018
+
+Plot of League average for ____ from 2001 to 2018:
+% of field goals that are 3s 
+Offensive Rating
+Defensive Rating
+Assists
+Pace
+
+
+
+Better indicator for number of wins:
+Offensive Rating vs Defensive Rating vs TS% vs Pace vs Assists vs FG% vs FTA for each year
+Generate Histograms for each team for each year?
+
+
+Chi square test for:
+TOV/game for Playoff teams vs Non Playoff teams
+Pts/game for Playoff teams vs Non Playoff teams
+Pace for Playoff teams vs Non Playoff teams
+Do this for each season?
