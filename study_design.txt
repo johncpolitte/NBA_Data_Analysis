@@ -27,7 +27,7 @@ Average shot distance
 
 Better indicator for number of wins:
 Offensive Rating vs Defensive Rating vs TS% vs Pace vs Assists vs FG% vs FTA for each year
-Generate Histograms for each team for each year?
+
 
 
 Chi square test for Playoff teams vs Non Playoff teams
