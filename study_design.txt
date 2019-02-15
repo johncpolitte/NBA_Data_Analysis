@@ -14,19 +14,18 @@ PTS
 Plot of League average for ____ from 2001 to 2018:
 % of field goals that are 3s 
 Offensive Rating
-Defensive Rating
 Assists
 Pace
 True Shooting
 FG%
 Turnovers
-Its
+Pts
 Average shot distance
 3pt attempt rate
 
 
 Better indicator for number of wins:
-Offensive Rating vs Defensive Rating vs TS% vs Pace vs Assists vs FG% vs FTA for each year
+Offensive Rating vs TS% vs Pace vs Assists vs FG% vs FTA for each year
 
 
 
