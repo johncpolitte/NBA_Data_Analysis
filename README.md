@@ -16,13 +16,15 @@ The source for all my data was https://www.basketball-reference.com/leagues/
 I built a webscraper that scraped the "Team Stats", "Miscellaneous Stats", and "Team Shooting" tables for each season from 2001-2018 (the year being when the finals took place). My scraper stored each table as a BeautifulSoup object in one dictionary that I piped into a Mongo database for storage. 
 
 ### Pandas Dataframes
-My next step was reading the BeautifulSoup objects into Pandas dataframes. I created a dataframe for every season. 
+My next step was reading the BeautifulSoup objects into Pandas dataframes. I selected certain statistics that I was interested in investigating, and then I created a dataframe for every season. 
 Below are two examples from 2001 and 2018
 
 #### 2001 Season
 <img src="imgs/Season_stats_2001.png"
     style="float: left; margin-right: 10px;" />
 
-#### 2018 Season
-<img src="imgs/Season_stats_2018.png"
+I also created a Dataframe with the league averages for all the statistics for each year, so that I could plot the stats over time to get a visual of the trends in each statistic. 
+
+#### League Averages 
+<img src="imgs/League_averages.png"
     style="float: left; margin-right: 10px;" />
