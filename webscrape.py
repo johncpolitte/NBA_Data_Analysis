@@ -15,6 +15,13 @@ database = client['NBA_tables']   # Database name
 mongo_connect = database['seasons'] 
 
 def url_gen(url):
+        '''
+        This function takes in the root web address for basketball reference 
+        and generates a list of urls from 2001-2018
+        input: string
+        output: list
+
+        '''
         url_list = []
         for i in range(2001, 2019):
             url_list.append(url + str(i) + '.html')
@@ -22,6 +29,16 @@ def url_gen(url):
 
 
 def scrape(season_urls):
+        '''
+        This function takes in a list of urls and scrapes the Misc table,
+        team stats table, and shooting table from basketball reference.
+        It then pipelines each seasons tables as a Beautiful Soup object in
+        dictionary. The result is a list of the dictionaries for each season
+        
+        input: list of urls that you want to scrape
+        output: List of dictionaries with Beautiful soup objects for each season
+
+        '''
     season = 2001
     for i in season_urls:
         fields= {}
