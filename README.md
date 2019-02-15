@@ -69,6 +69,7 @@ Using the league averages table I created plots for total points scored,total as
 Based on the plots above, there seems to be an increase in the offensive production in the modern era of the NBA compared to the beginning of the century. To confirm this I perfomed some statistical analysis on selected statistics. 
 
 ## Statistical Testing
+
 ###Comparing average points scored by a team for a season for sample from beginning of century and "modern era":
 H0: The average number of pts scored for a team for 2001 >= 2018
 Ha: The average number of pts scored for a team for 2001 < 2018
