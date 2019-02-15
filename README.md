@@ -17,9 +17,9 @@ I built a webscraper that scraped the "Team Stats", "Miscellaneous Stats", and "
 
 ### Pandas Dataframes
 My next step was reading the BeautifulSoup objects into Pandas dataframes. I selected certain statistics that I was interested in investigating, and then I created a dataframe for every season. 
-Below are two examples from 2001 and 2018
+Below is an example of one of the DataFrames for the 2018 season
 
-#### 2001 Season
+#### 2018 Season
 <img src="imgs/table_example.png"
     style="float: left; margin-right: 10px;" />
 
@@ -27,4 +27,13 @@ I also created a Dataframe with the league averages for all the statistics for e
 
 #### League Averages 
 <img src="imgs/League_averages.png"
+    style="float: left; margin-right: 10px;" />
+
+Using the league averages table I created plots for total points scored,total assists, average pace, total count of turnovers, average FG%, average TS%, average FGA distance, percent of FGA from 3, and the average offensive rating for the entire league over each season. 
+
+<img src="imgs/Total_points.png"
+    style="float: left; margin-right: 10px;" />
+
+
+<img src="imgs/Assist_totals.png"
     style="float: left; margin-right: 10px;" />
