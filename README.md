@@ -70,7 +70,7 @@ Based on the plots above, there seems to be an increase in the offensive product
 
 ## Statistical Testing
 
-###Comparing average points scored by a team for a season for sample from beginning of century and "modern era":
+### Comparing average points scored by a team for a season for sample from beginning of century and "modern era":
 H0: The average number of pts scored for a team for 2001 >= 2018
 Ha: The average number of pts scored for a team for 2001 < 2018
 alpha: .05
@@ -84,7 +84,7 @@ Based on the results of the t-test(pvalue=4.084653651586016e-18) I can reject th
 
  
 
-###Comparing average FGA distance for sample from beginning of century and "modern era": 
+### Comparing average FGA distance for sample from beginning of century and "modern era": 
 H0: The average distance of a FGA for 2001 >= 2018
 Ha: The average distance of a FGA for 2001 < 2018
 alpha: .05
@@ -103,10 +103,13 @@ I also wanted to perform some correlation tests to determine if certain statisti
 
 ## Bias and Error
 There are many potential sources of Bias and error in my study. Here are just a few of those sources:
--Interaction between statistics
--Injuries to key players that could cause a decrease in offensive production
--In 2012 there was a lockout. In this season there were fewer games, which impacted the total amounts for that year. This also could have had an impact on the conditioning of the players, and they had to play their way into shape at the beginning of the season. This could have caused a decrease in offensive production.
--Independent and random sampling. There might be unintentional bias included in the selection process for my 'random' sampling. Instead of looking at the averages for a single year I could have taken a sample from different teams for a span of years. 
+Interaction between statistics
+
+Injuries to key players that could cause a decrease in offensive production
+
+In 2012 there was a lockout. In this season there were fewer games, which impacted the total amounts for that year. This also could have had an impact on the conditioning of the players, and they had to play their way into shape at the beginning of the season. This could have caused a decrease in offensive production.
+
+Independent and random sampling. There might be unintentional bias included in the selection process for my 'random' sampling. Instead of looking at the averages for a single year I could have taken a sample from different teams for a span of years. 
 
 
 ## Future Work for Project
