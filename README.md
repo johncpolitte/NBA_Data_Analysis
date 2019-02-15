@@ -20,7 +20,7 @@ My next step was reading the BeautifulSoup objects into Pandas dataframes. I sel
 Below are two examples from 2001 and 2018
 
 #### 2001 Season
-<img src="imgs/Season_stats_2001.png"
+<img src="imgs/table_example.png"
     style="float: left; margin-right: 10px;" />
 
 I also created a Dataframe with the league averages for all the statistics for each year, so that I could plot the stats over time to get a visual of the trends in each statistic. 
