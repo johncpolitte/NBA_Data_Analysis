@@ -37,3 +37,24 @@ Using the league averages table I created plots for total points scored,total as
 
 <img src="imgs/Assist_totals.png"
     style="float: left; margin-right: 10px;" />
+
+<img src="imgs/Pace.png"
+    style="float: left; margin-right: 10px;" />
+
+<img src="imgs/Turnovers.png"
+    style="float: left; margin-right: 10px;" />
+
+<img src="imgs/FG%.png"
+    style="float: left; margin-right: 10px;" />
+
+<img src="imgs/TS%.png"
+    style="float: left; margin-right: 10px;" />
+
+<img src="imgs/FGDistance.png"
+    style="float: left; margin-right: 10px;" />
+
+<img src="imgs/FG_from3.png"
+    style="float: left; margin-right: 10px;" />
+
+<img src="imgs/ORtg.png"
+    style="float: left; margin-right: 10px;" />
