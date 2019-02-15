@@ -17,7 +17,12 @@ I built a webscraper that scraped the "Team Stats", "Miscellaneous Stats", and "
 
 ### Pandas Dataframes
 My next step was reading the BeautifulSoup objects into Pandas dataframes. I created a dataframe for every season. 
+Below are two examples from 2001 and 2018
 
+#### 2001 Season
 <img src="imgs/Season_stats_2001.png"
-    alt= "2001 Season stats"
+    style="float: left; margin-right: 10px;" />
+
+#### 2018 Season
+<img src="imgs/Season_stats_2018.png"
     style="float: left; margin-right: 10px;" />
