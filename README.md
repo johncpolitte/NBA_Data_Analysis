@@ -73,10 +73,13 @@ Based on the plots above, there seems to be an increase in the offensive product
 
 ### Comparing average points scored by a team for a season for sample from beginning of century and "modern era":
 H0: The average number of pts scored for a team for 2001 >= 2018
+
 Ha: The average number of pts scored for a team for 2001 < 2018
+
 alpha: .05
 
 2001 average number of pts scored for a team: 7774.43 + or - 293.26 Pts
+
 2018 average number of pts scored for a team: 8719.32 + or - 300.35 Pts
 
  I performed a one tailed two sample t-test in order to determine if the sample average number of pts scored over a season differed between eras. I used the 2001 season for a sample from the beginning of the century, and the 2018 season for a sample of the modern era. 
@@ -87,10 +90,13 @@ Based on the results of the t-test(pvalue=4.084653651586016e-18) I can reject th
 
 ### Comparing average FGA distance for sample from beginning of century and "modern era": 
 H0: The average distance of a FGA for 2001 >= 2018
+
 Ha: The average distance of a FGA for 2001 < 2018
+
 alpha: .05
 
 2001 average FGA distance = 11.97 + or - 0.65ft
+
 2018 average FGA distance = 13.16 + or - 0.64ft
 
 Once again, I performed a one tailed two sample t-test in order to determine if the sample average FGA distance differed between eras. I used the 2001 season for a sample from the beginning of the century, and the 2018 season for a sample of the modern era. 
