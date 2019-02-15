@@ -1,28 +1,29 @@
 # Investigating the Offensive Explosion in the NBA from 2001-2018
 
-I decided to do a statistical investigation of the NBA from 2001-2018 because I have always had a pashion for basketball, and thought it would be a good first project beacause of all the statistics available online. 
+I decided to do a statistical investigation of the NBA from 2001-2018 because I have always had a passion for basketball, and I thought it would be a good first project beacause of all the statistics available online. 
 
 
 ## Goals of the Study
 
 Over the last two decades the NBA has experienced somewhat of a revolution in the way the game is played. I wanted to use various statistical methods to provied evidence either proving or disproving whether or not this was true. 
 
-My hypothesis going into the study was that offensive metrics for the current era of the NBA has increased compared to the beginning of the century. 
+My hypothesis going into the study was that offensive metrics for the current era of the NBA have increased compared to the beginning of the century. 
 
 ## Methods and Pipeline
 The source for all my data was https://www.basketball-reference.com/leagues/ 
 
 ### Webscraper
-I built a webscraper that scraped the "Team Stats", "Miscellaneous Stats", and "Team Shooting" tables for each season from 2001-2018 (the year being when the finals took place). My scraper stored each table as a BeautifulSoup object in one dictionary that I piped into a Mongo database for storage. 
+I built a webscraper that scraped the "Team Stats", "Miscellaneous Stats", and "Team Shooting" tables for each season from 2001-2018 (the year being when the finals took place). My scraper stored each table as a BeautifulSoup object in a dictionary for that season. A list of dictionaries was then generated for all the seasons and piped into a mongo database.
+
+https://github.com/johncpolitte/Capstone1/blob/master/webscrape.py
 
 ### Pandas Dataframes
 My next step was reading the BeautifulSoup objects into Pandas dataframes. I selected certain statistics that I was interested in investigating, and then I created a dataframe for every season. 
 Below is an example of one of the DataFrames for the 2018 season.
 
-### Analysis
-To perform my analysis I used two sample ttests from the numpy and scipy libraries. I also used Matplotlib for data visualization 
+https://github.com/johncpolitte/Capstone1/blob/master/df_maker.py
 
-## Results
+## Results and Analysis
 #### 2018 Season
 <img src="imgs/table_example.png"
     style="float: left; margin-right: 10px;" />
@@ -97,7 +98,7 @@ Once again, I performed a one tailed two sample t-test in order to determine if 
 Based on the results of the t-test(pvalue=9.29810375725505e-10) I can reject the null hypothesis with 95% confidence. The average distance of FGA is larger in the modern era of basketball compared to the early 2000's.
 
 ### Missed opportunities in statistical testing
-There were a number of other statistical tests that I wanted to perform but I ran out of time. I would have liked to change the samples of the above tests to confirm my results. I also would have liked to use other statistics for my t-tests(Offensive Rating, FG%, TS%, and TO).
+There were a number of other statistical tests that I wanted to perform but I ran out of time. I would have liked to change the samples for the above tests. I also would have liked to use other statistics for my t-tests(Offensive Rating, FG%, TS%, and TO).
 
 I also wanted to perform some correlation tests to determine if certain statistics had a correlation to the number of wins a team had for a season
 
@@ -113,12 +114,12 @@ Independent and random sampling. There might be unintentional bias included in t
 
 
 ## Future Work for Project
-The next step in this project includes organizing and cleaning up the coding portion of my project. Right now it would be very difficult for someone else to reproduce this study because most of the coding was done using Jupyter Notebook. I need to create more pythonic functions that would make the study easier to reexecute or add data to. As of now I only have two functions that are in .py files. 
+The next step in this project includes organizing and cleaning up the coding portion of my project. Right now it would be very difficult for someone else to reproduce this study because most of the coding was done using Jupyter Notebook. I need to create more pythonic functions that would make the study easier to reexecute and add data to the study. As of now I only have two functions that are in .py files. 
 
 After cleaning up the coding aspect of the project, I would scrape more data from Basketball Reference to look into the changes in statistics over a much larger peroiod of time. I could go as far back as the early 1970's to see how much the NBA has changed over its existence.
 
-Use pergame stats instead of season totals in order to account for lockout seasons. 
+Use per-game stats instead of season totals in order to account for lockout seasons. 
 
 Due to time constraintes I was unable to perform all of the statistical tests I wanted to do. I also was unable to plot the various distributions of the samples I took. 
 
-Lastly I would pull more safisticated data from sources like Second Spectrum and use their statistics to compare the various eras in the NBA.
+Lastly I would pull more safisticated data from sources like Second Spectrum, and ESPN (PER, real plus minus), so I could use their statistics to compare the various eras in the NBA. I also could look into creating my own statistics
