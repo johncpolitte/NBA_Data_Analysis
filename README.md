@@ -68,8 +68,8 @@ Using the league averages table I created plots for total points scored,total as
 
 Based on the plots above, there seems to be an increase in the offensive production in the modern era of the NBA compared to the beginning of the century. To confirm this I perfomed some statistical analysis on selected statistics. 
 
-### Statistical Testing
-####Comparing average points scored by a team for a season for sample from beginning of century and "modern era":
+## Statistical Testing
+###Comparing average points scored by a team for a season for sample from beginning of century and "modern era":
 H0: The average number of pts scored for a team for 2001 >= 2018
 Ha: The average number of pts scored for a team for 2001 < 2018
 alpha: .05
@@ -83,7 +83,7 @@ Based on the results of the t-test(pvalue=4.084653651586016e-18) I can reject th
 
  
 
-####Comparing average FGA distance for sample from beginning of century and "modern era": 
+###Comparing average FGA distance for sample from beginning of century and "modern era": 
 H0: The average distance of a FGA for 2001 >= 2018
 Ha: The average distance of a FGA for 2001 < 2018
 alpha: .05
@@ -95,7 +95,7 @@ Once again, I performed a one tailed two sample t-test in order to determine if 
 
 Based on the results of the t-test(pvalue=9.29810375725505e-10) I can reject the null hypothesis with 95% confidence. The average distance of FGA is larger in the modern era of basketball compared to the early 2000's.
 
-#### Missed opportunities
+### Missed opportunities in statistical testing
 There were a number of other statistical tests that I wanted to perform but I ran out of time. I would have liked to change the samples of the above tests to confirm my results. I also would have liked to use other statistics for my t-tests(Offensive Rating, FG%, TS%, and TO).
 
 I also wanted to perform some correlation tests to determine if certain statistics had a correlation to the number of wins a team had for a season
